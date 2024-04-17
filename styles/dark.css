@@ -1,0 +1,24 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --main-text-color: #f1b2ce;
+  --shadow-color: var(--accent-color);
+  --corners-color: var(--accent-color);
+  --accent-text-color: var(--bg-color);
+  --button-active-color: var(--accent-color);
+  --button-text-color: var(--accent-color);
+  --content-title-color: var(--accent-color);
+  --hover-color: 1px solid rgba(255, 0, 112, 0.4);
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__decor-text {
+  visibility: visible;
+}
